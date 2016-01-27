@@ -1,0 +1,362 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+	background-color: #ffffff;
+
+}
+
+section{
+  clear: both;
+}
+
+.container{
+
+	   max-width: 940px;
+  	 margin: 20px auto;
+  	 padding: 15px 10px 15px 10px;
+     position: relative;
+}
+
+nav{
+  display: inline;
+  text-align: right;
+}
+
+nav img{
+ display: inline;
+   float: left;
+}
+
+nav a{
+  display: inline;
+  vertical-align: middle;
+
+}
+
+nav li {
+  color: #000000;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  font-size: 12px;
+  display: inline;
+  text-align: right;
+  padding-left: 20px;
+  font-weight: bold;
+
+ }
+
+ nav li a{
+ 	text-decoration: none;
+ 	color: #000000;
+ }
+
+ .slider{
+  height: 500px;
+  background: url(../img/indexbanner-bg3.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.textoslider{
+  margin-top: 150px;
+  margin-left: 20%;
+  display: inline-block;
+}
+
+.textoslider h3{
+font-size: 40px;
+margin:0 auto;
+font-family: 'Raleway', 'Open Sans', sans-serif;
+color:#ffffff;
+}
+
+.textoslider p{
+font-family: 'Raleway', 'Open Sans', sans-serif;
+color:#c2c5cc;
+}
+
+.bloquebuscador{
+	margin: 0 auto;
+	text-align: center;
+	float: center;
+	margin-top: -50px;
+}
+
+.buscador{
+	margin: 20px 0px 20px 20px;
+	padding: 22px;
+}
+
+button{
+	margin: 0;
+	padding:24px;
+  background-color:#00abf0;
+  color:#ffffff;
+border: none;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+.articulos{
+  display: flex;
+  flex-direction: row;
+margin-bottom: 80px;
+padding: 50px 10px 10px 50px;
+  text-align: center;
+  position: relative;
+}
+
+.articulos1{
+	padding-top: 15px;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.articulos1 h4{
+		color: #000000;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+.articulos1 p{
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+
+.tituloseccion2{
+  text-align: center;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  margin-bottom: 50px;
+}
+
+.tituloseccion2 h3{
+  font-size: 40px;
+  margin: 0 auto;
+}
+.tituloseccion2 p{
+  padding-bottom: 30px;
+}
+
+.seccion2{
+  display:flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 0 auto 50px;
+}
+
+.seccion2 h3{
+  text-align: center;
+}
+
+.seccion2 p{
+  text-align: center;
+}
+
+.columns{
+
+  	font-family: 'Raleway', 'Open Sans', sans-serif;
+  	text-align: center;
+  	
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+       width: 30%;
+
+}
+
+.articulosizq{
+  padding-top: 15px;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+    text-align: center;
+    flex-grow: 1;
+    text-align: right;
+    position: relative;
+    padding-right: 40px;
+    
+}
+
+.articulosizq li{
+  list-style: none;
+  text-align: right;
+}
+
+.articulosizq li h4{
+    color: #000000;
+    font-size: 14px;
+    padding-right: 30px;
+}
+
+.articulosizq li p{
+  font-size: 12px;
+  margin: 0;
+  text-align: right;
+  padding-bottom: 30px;
+  padding-right: 30px;
+}
+
+.articulosizq img{
+  text-align: right;
+}
+
+.articleimg{
+  text-align: center;
+}
+
+.articulosder{
+  padding-top: 15px;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+    flex-grow: 1;
+    text-align: left;
+    position: relative;
+    padding-right: 50px;
+}
+
+.articulosder li{
+  list-style: none;
+  text-align: left;
+}
+
+.articulosder li h4{
+    color: #000000;
+    font-size: 14px;
+}
+
+.articulosder li p{
+  font-size: 12px;
+  margin: 0;
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.articulosder img{
+  text-align: left;
+  margin: 0;
+}
+
+.planes{
+
+}
+
+ .titulosplanes{
+  height: 350px;
+  background: url(../img/pricing-bg.jpg) no-repeat center center;
+  background-size: cover;
+ 
+}
+
+.textosplanes{
+ padding-top:150px;
+ text-align: center;
+}
+
+.textosplanes h3{
+font-size: 40px;
+margin:0 auto;
+font-family: 'Raleway', 'Open Sans', sans-serif;
+color:#000000;
+text-align: center;
+
+}
+
+.textosplanes p{
+font-family: 'Raleway', 'Open Sans', sans-serif;
+color:#c2c5cc;
+text-align: center;
+
+}
+
+.seccionplanes{
+  clear: both;
+  display:flex;
+  flex-direction: row;
+   flex-grow: 1;
+   text-align: center;
+ 
+  
+
+}
+
+.cadaplan{
+
+  padding: 30px;
+}
+
+.descripcionplanes{
+  margin: -60px 20px 30px 20px;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  flex-grow: 1;
+  text-align: center;
+ padding: 15px;
+ clear: both;
+ background-color: #ffffff;
+}
+
+.descripcionplanes h3{
+  text-align: center;
+}
+
+.descripcionplanes p{
+  text-align: center;
+}
+
+.descripcionplanes button{
+  margin: 0;
+  padding:10px;
+}
+
+
+
+.prefooter{
+  background-color: #233141;
+  padding: 50px;
+  text-align: center;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+.prefooter p{
+  color: #ffffff;
+  font-size: 30px;
+
+}
+
+.prefooter p span{
+  color: #00aff1;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+footer{
+	background-color: #151d26;
+	clear: both;
+
+}
+.textofooter{
+  display: inline-block;
+}
+
+footer p{
+    margin: 0 auto;
+    padding:30px 15px 30px 0;
+	color: #c2c5cc;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+footer nav{
+  display: inline;
+  text-align: right;
+}
+footer nav li {
+  color: #c2c5cc;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  font-size: 12px;
+  display: inline;
+  text-align: right;
+  padding-left: 20px;
+
+ }
+
+ footer nav a{
+  color:#c2c5cc;
+ }
+
+
