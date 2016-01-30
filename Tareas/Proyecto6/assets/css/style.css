@@ -1,0 +1,900 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+header{
+	background-color: #ffffff;
+
+}
+
+section{
+  clear: both;
+}
+
+.container{
+
+	   max-width: 940px;
+  	 margin: 20px auto;
+  	 padding: 15px 10px 15px 10px;
+     position: relative;
+}
+
+nav{
+  text-align: right;
+    display: flex;
+  flex-direction: row;
+}
+
+nav img{
+ padding-top: 12px;
+   float: left;
+}
+
+nav a{
+  
+  vertical-align: middle;
+    flex-grow: 1
+
+}
+nav ul{
+    flex-grow: 1;
+}
+
+nav li {
+  color: #000000;
+  
+  font-size: 12px;
+  display: inline;
+  text-align: right;
+  padding-left: 20px;
+  font-weight: bold;
+
+ }
+
+ nav li a{
+ 	text-decoration: none;
+ 	color: #000000;
+ }
+
+ .slider{
+ width: 100%;
+  height: 500px;
+  background: url(../img/indexbanner-bg3.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.textoslider{
+    width: 35%;
+  margin-top: 150px;
+  margin-left: 15%;
+  display: inline-block;
+}
+
+.textoslider h3{
+font-size: 40px;
+margin:0 auto;
+font-family: 'Raleway', 'Open Sans', sans-serif;
+color:#ffffff;
+}
+
+.textoslider p{
+font-family: 'Raleway', 'Open Sans', sans-serif;
+color:#c2c5cc;
+}
+
+.bloquebuscador{
+	margin: 0 auto;
+	text-align: center;
+	float: center;
+	margin-top: -50px;
+}
+
+.buscador{
+	margin: 20px 0px 20px 0px;
+	padding: 22px;
+    width: 70%;
+}
+
+button{
+	margin: 0;
+	padding:24px;
+  background-color:#00abf0;
+  color:#ffffff;
+border: none;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+.articulos{
+   
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom: 80px;
+    padding: 50px 100px 50px 100px;
+    text-align: center;
+    position: relative;
+}
+
+.articulos1{
+	padding-top: 15px;
+    flex-grow: 1;
+}
+
+.articulos1 h4{
+		color: #000000;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+.articulos1 p{
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+
+.articulos1:hover{
+  transition: 1.3s ease-in-out;
+  transform:scale(1.25);
+
+}
+
+.tituloseccion2{
+  text-align: center;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  margin-bottom: 50px;
+}
+
+.tituloseccion2 h3{
+  font-size: 40px;
+  margin: 0 auto;
+}
+.tituloseccion2 p{
+  padding-bottom: 30px;
+}
+
+.seccion2{
+  display:flex;
+  flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  text-align: center;
+  margin: 0 auto 50px;
+  width: 90%;
+}
+
+.seccion2 h3{
+  text-align: center;
+}
+
+.seccion2 p{
+  text-align: center;
+}
+
+.columns{
+
+  	font-family: 'Raleway', 'Open Sans', sans-serif;
+  	text-align: center;
+  	
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    flex-grow: 1;
+       width: 30%;
+
+}
+
+.articulosizq{
+  padding-top: 15px;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+    text-align: center;
+    flex-grow: 1;
+    text-align: right;
+    position: relative;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+
+    
+}
+.textosizq{
+  flex-grow: 1;
+}
+
+.textosizq h4{
+    color: #000000;
+    font-size: 14px;
+    padding-right: 20px;
+}
+
+.textosizq p{
+  font-size: 12px;
+  margin: 0;
+  text-align: right;
+  padding-bottom: 30px;
+  padding-right: 20px;
+}
+
+.articulosizq img{
+  text-align: right;
+  width: 18%;
+  height: 18%;
+
+}
+
+.articleimg{
+  width: 100%;
+}
+
+.articulosder{
+  padding-top: 15px;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+    flex-grow: 1;
+    text-align: left;
+    position: relative;
+    padding-left: 10px;
+     display: flex;
+    flex-direction: row;
+}
+
+.textosder{
+  flex-grow: 1;
+}
+
+.textosder h4{
+    color: #000000;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.textosder p{
+  font-size: 12px;
+  margin: 0;
+  text-align: left;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+
+.articulosder img{
+  text-align: left;
+  width: 18%;
+  height: 18%;
+}
+
+.planes{
+
+}
+
+ .titulosplanes{
+  height: 400px;
+  background: url(../img/pricing-bg.jpg) no-repeat center center;
+  background-size: cover;
+ 
+}
+
+.textosplanes{
+ padding-top:150px;
+ text-align: center;
+}
+
+.textosplanes h3{
+font-size: 40px;
+margin:0 auto;
+font-family: 'Raleway', 'Open Sans', sans-serif;
+color:#000000;
+text-align: center;
+
+}
+
+.textosplanes p{
+font-family: 'Raleway', 'Open Sans', sans-serif;
+color:#c2c5cc;
+text-align: center;
+
+}
+
+.seccionplanes{
+  width: 80%;
+  clear: both;
+  display:flex;
+  flex-direction: row;
+   flex-flow: row wrap;
+    justify-content: space-around;
+   flex-grow: 1;
+   margin: 0 auto;
+}
+
+.cadaplan{
+  padding: 30px 0px;
+}
+
+
+.cadaplan h2{
+  font-size: 60px;
+  margin: 0px;
+}
+
+.cadaplan h5{
+  letter-spacing: 2px;
+  color: #434343;
+}
+
+.cadaplan p{
+    color:#a0a0a0;
+    padding-bottom: 30px;           
+}          
+.cadaplan sup{
+  font-size: 20px;
+}
+
+.cadaplan ul li{
+  list-style: none;
+  text-align: left;
+}
+
+.cadaplan ul li span{
+  text-align: right;
+  color:red;
+}
+
+.buttonplanes a button{
+  padding:15px 40px;
+  background-color:#00abf0;
+  color:#ffffff;
+  border: none;
+  border-radius: 5px
+}
+
+.flexlistas{
+   display:flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.flexlistas ul li{
+    font-size: 14px;
+  padding: 10px 0;
+
+}
+
+.lista1{
+  flex-grow: 1;
+}
+
+.lista1 ul{
+  padding: 0 0px 0 20px;
+}
+
+.lista2{
+  flex-grow: 1;
+ 
+}
+
+.descripcionplanes{
+  margin: -120px 20px 150px 20px;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  flex-grow: 1;
+  text-align: center;
+ padding: 15px;
+ clear: both;
+ background-color: #ffffff;
+ box-shadow: 0px 2px 5px 2px #dddad9;
+
+}
+
+.descripcionplanes h2{
+  text-align: center;
+
+}
+
+.descripcionplanes p{
+  text-align: center;
+}
+
+.descripcionplanes button{
+  margin: 0;
+  padding:10px;
+}
+
+
+
+.prefooter{
+  background-color: #233141;
+  padding: 50px;
+  text-align: center;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+.prefooter p{
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: lighter;
+    padding: 0 20px 0 20px;
+
+}
+
+.prefooter p span{
+  color: #00aff1;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+footer{
+	background-color: #151d26;
+	clear: both;
+  display: flex;
+  flex-direction: row;
+}
+.textofooter{
+  flex-grow: 1;
+}
+
+footer p{
+  margin-left: 20px;  
+	color: #c2c5cc;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+footer nav{
+  display: inline;
+  text-align: right;
+  flex-grow: 1;
+  margin-right: 20px;
+}
+footer nav li {
+  color: #c2c5cc;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  font-size: 12px;
+  display: inline;
+  text-align: right;
+  padding-left: 20px;
+ }
+
+ footer nav a{
+  color:#c2c5cc;
+ }
+
+
+
+
+/*Comienza MediaQuery para moviles */
+
+ @media screen and (max-width: 400px) {
+
+     .slider{
+         width: 100%;
+         height: 200px;
+     }
+     
+     .textoslider{
+         margin-top:50px;
+         margin-left: 20px;
+         width:50%;
+     }
+     .textoslider h3{
+        font-size: 18px; 
+     }
+     .textoslider p{
+         font-size: 12px;
+     }
+     .bloquebuscador{
+         width: 90%;
+     }
+     .buscador{
+         width: 90%;
+         padding: 10px 5px;
+         margin:30px auto;
+         margin-bottom: 10px;
+     }
+     .bloquebuscador button{
+         padding: 20px;   
+     }
+     
+     .articulos{
+         
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+        padding: 50px 10px 10px 0px;
+        text-align: center;
+         
+     }
+     
+     .seccion2{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        width: 90%; 
+        
+     }
+
+     
+     .columns{
+     text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        width: 100%;
+         
+     }
+     
+     .articulosizq{
+         
+         text-align: center;
+         flex-grow: 1;
+         display: flex;
+         flex-direction: column;
+         padding-right: 0px;
+     }
+     
+     .textosizq{
+        flex-grow: 1;
+        margin: 0 auto;
+        text-align: center;
+     }
+
+    .textosizq h4{
+        font-size: 16px;
+        text-align: center;
+        padding-right: 0px;
+     }
+
+     .textosizq p{
+        font-size: 14px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 30px;
+        padding-right: 0px;
+}
+
+     .articulosizq img{
+        width: 15%;
+        height: 15%;
+        margin: 0 auto;
+     }
+
+     .articleimg{
+         display: none;
+     }
+
+     .articulosder{
+         text-align: center;
+         flex-grow: 1;
+         display: flex;
+         flex-direction: column;
+         padding-left: 0px;
+}
+
+     .textosder{
+        flex-grow: 1;
+        margin: 0 auto;
+        text-align: center;
+}
+
+     .textosder h4{
+         font-size: 16px;
+         text-align: center;
+         padding-left: 0px;
+}
+
+     .textosder p{
+         font-size: 14px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 30px;
+        padding-left: 0px;
+}
+
+     .articulosder img{
+         width: 15%;
+         height: 15%;
+        margin: 0 auto;
+     }
+     
+      .titulosplanes{
+        height: 200px;
+        width: 100%;
+ 
+     }
+     
+     .textosplanes{
+        padding-top:60px;
+        text-align: center;
+        
+}
+
+     .textosplanes h3{
+         font-size: 20px;
+         margin:0 auto;  
+     }
+     
+     .textosplanes p{
+         font-size: 14px;
+     }
+     
+     .seccionplanes{
+        
+        display:flex;
+         flex-direction: row;
+         flex-flow: row wrap;
+        justify-content: space-around;
+        flex-grow: 1;
+        margin-top: 60px;
+     }
+
+     .cadaplan{
+         padding-bottom: 0px;
+     }
+     
+     .cadaplan p{
+         margin-top: 0px;
+         margin-bottom: 10px;
+         padding-bottom: 15px;
+     }
+
+     .flexlistas ul li{
+        padding: 5px 0;
+     }
+     
+     .lista1 ul{
+         padding: 0px 0px 0px 35px;
+     }
+     
+     .descripcionplanes{
+        padding-top: 0px;
+        margin-bottom: 150px;
+     }
+
+     .descripcionplanes h5{
+         margin-bottom: 10px;
+     }
+
+     .prefooter{
+        padding: 10px;
+        margin-top: -80px;
+     }
+     
+     .prefooter p{
+         font-size: 20px;   
+     }
+
+ }
+
+
+
+
+
+
+
+
+/*Comienza MediaQuery para tablets*/
+
+@media screen and (min-width: 401px) and (max-width: 620px) {
+        .slider{
+            width: 100%;
+            height: 300px;
+        }
+    
+        .textoslider{
+            margin-top:90px;
+            margin-left: 20px;
+            width:50%;
+        }
+        
+        .textoslider h3{
+            font-size: 24px; 
+        }
+     
+        .textoslider p{
+            font-size: 14px;
+            width: 90%;
+        }
+    
+        .bloquebuscador{
+            width: 90%;
+        }
+    
+        .buscador{
+            width: 70%;
+            padding: 15px 5px;
+            margin:30px auto;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+    
+        
+        .bloquebuscador button{
+            padding: 17px;   
+        }
+     
+     .articulos{
+        
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 80px;
+        padding: 50px 10px 10px 10px;
+        text-align: center;
+        flex-flow: row wrap;
+        justify-content: space-between;
+     }
+    
+    
+     
+     .seccion2{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        width: 90%; 
+        
+     }
+
+     
+     .columns{
+     text-align: center;
+        display: flex;
+        flex-direction: row;
+         flex-flow: row wrap;
+    justify-content: space-around;
+        flex-grow: 1;
+        width: 100%;
+         
+     }
+     
+     .articulosizq{
+         
+         text-align: center;
+         flex-grow: 1;
+         display: flex;
+         flex-direction: column;
+         padding-right: 0px;
+     }
+     
+     .textosizq{
+        flex-grow: 1;
+        margin: 0 auto;
+        text-align: center;
+     }
+
+    .textosizq h4{
+        font-size: 16px;
+        text-align: center;
+        padding-right: 0px;
+     }
+
+     .textosizq p{
+        font-size: 14px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 30px;
+        padding-right: 0px;
+}
+
+     .articulosizq img{
+        width: 10%;
+        height: 10%;
+        margin: 0 auto;
+     }
+    
+    .articleimg{
+        width: 100%;
+    }
+
+
+     .articulosder{
+         text-align: center;
+         flex-grow: 1;
+         display: flex;
+         flex-direction: column;
+         padding-left: 0px;
+}
+
+     .textosder{
+        flex-grow: 1;
+        margin: 0 auto;
+        text-align: center;
+}
+
+     .textosder h4{
+         font-size: 16px;
+         text-align: center;
+         padding-left: 0px;
+}
+
+     .textosder p{
+         font-size: 14px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 30px;
+        padding-left: 0px;
+}
+
+     .articulosder img{
+         width: 10%;
+         height: 10%;
+        margin: 0 auto;
+     }
+     
+      .titulosplanes{
+        height: 200px;
+        width: 100%;
+ 
+     }
+     
+     .textosplanes{
+        padding-top:50px;
+        text-align: center;
+        
+}
+
+     .textosplanes h3{
+         font-size: 24px;
+         margin:0 auto;  
+     }
+     
+     .textosplanes p{
+         font-size: 14px;
+     }
+     
+     .seccionplanes{
+       width: 95%;
+        display:flex;
+        flex-direction: row;
+         flex-flow: row wrap;
+        justify-content: space-around;
+        flex-grow: 1;
+        margin-top: 60px;
+     }
+
+     .cadaplan{
+         padding-bottom: 0px;
+     }
+     
+     .cadaplan p{
+         margin-top: 0px;
+         margin-bottom: 10px;
+         padding-bottom: 15px;
+     }
+
+     .flexlistas ul li{
+        padding: 5px 0;
+         
+     }
+     
+     .lista1 ul{
+         width: 100%;
+         padding: 0px 20px 0px 0px;
+        
+     }
+     
+     .descripcionplanes{
+         width: 30%;
+        
+        padding-top: 0px;
+        margin-bottom: 180px;
+         
+     }
+
+     .descripcionplanes h5{
+         margin-bottom: 10px;
+     }
+
+     .prefooter{
+        padding: 10px;
+        margin-top: -80px;
+     }
+     
+     .prefooter p{
+         font-size: 20px;   
+     }
+    
+    
+    
+    
+}
+
+
+
+
