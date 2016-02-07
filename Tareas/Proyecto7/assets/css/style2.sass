@@ -1,3 +1,10 @@
+@mixin flexbox
+    display: flex
+    flex-direction: row
+
+$colorboton: #00abf0 
+$centrado: 0 auto
+    
 body
     font-family: 'Raleway', 'Open Sans', sans-serif
 
@@ -15,9 +22,8 @@ section
 
 nav
     text-align: right
-    display: flex
-    flex-direction: row
-    
+    @include flexbox
+        
     img
         padding-top: 12px
         float: left
@@ -56,7 +62,7 @@ nav
 .textoslider
     h3
         font-size: 40px
-        margin: 0 auto
+        margin: $centrado
         color: #ffffff
 
     p 
@@ -78,13 +84,12 @@ nav
 button
     margin: 0 
     padding: 24px 
-    background-color: #00abf0 
+    background-color: $colorboton
     color: #ffffff 
     border: none 
  
 .articulos
-    display: flex 
-    flex-direction: row 
+    @include flexbox
     flex-flow: row wrap 
     justify-content: space-around 
     margin-bottom: 80px 
@@ -113,14 +118,13 @@ button
  
     h3
         font-size: 40px 
-        margin: 0 auto 
+        margin: $centrado 
  
     p
         padding-bottom: 30px 
  
 .seccion2 
-    display: flex 
-    flex-direction: row 
+    @include flexbox
     flex-flow: row wrap 
     justify-content: space-around 
     text-align: center 
@@ -136,8 +140,7 @@ button
  
 .columns 
     text-align: center 
-    display: flex 
-    flex-direction: row 
+    @include flexbox
     flex-flow: row wrap 
     justify-content: space-around 
     flex-grow: 1 
@@ -186,8 +189,7 @@ button
     text-align: left 
     position: relative 
     padding-left: 10px 
-    display: flex 
-    flex-direction: row 
+    @include flexbox 
  
 .textosder 
     flex-grow: 1 
@@ -223,7 +225,7 @@ button
 
     h3 
         font-size: 40px 
-        margin: 0 auto 
+        margin: $centrado 
         color: #000000 
         text-align: center 
  
@@ -235,12 +237,11 @@ button
 .seccionplanes 
     width: 80% 
     clear: both 
-    display: flex 
-    flex-direction: row 
+    @include flexbox
     flex-flow: row wrap 
     justify-content: space-around 
     flex-grow: 1 
-    margin: 0 auto 
+    margin: $centrado 
  
 
 .cadaplan 
@@ -274,14 +275,13 @@ button
     a 
         button 
             padding: 15px 40px 
-            background-color: #00abf0 
+            background-color: $colorboton
             color: #ffffff 
             border: none 
             border-radius: 5px
  
 .flexlistas 
-    display: flex 
-    flex-direction: row 
+    @include flexbox
     text-align: center 
  
     ul 
@@ -342,8 +342,7 @@ button
 footer 
     background-color: #151d26 
     clear: both 
-    display: flex 
-    flex-direction: row 
+    @include flexbox
  
     p 
         margin-left: 20px   
@@ -416,7 +415,7 @@ footer
         display: flex 
         flex-direction: column 
         text-align: center 
-        margin: 0 auto 
+        margin: $centrado 
         width: 90%  
      
 
@@ -438,7 +437,7 @@ footer
 
     .textosizq 
         flex-grow: 1 
-        margin: 0 auto 
+        margin: $centrado 
         text-align: center 
      
 
@@ -450,7 +449,7 @@ footer
 
         p 
             font-size: 14px 
-            margin: 0 auto 
+            margin: $centrado 
             text-align: center 
             padding-bottom: 30px 
             padding-right: 0px 
@@ -477,7 +476,7 @@ footer
 
     .textosder 
         flex-grow: 1 
-        margin: 0 auto 
+        margin: $centrado 
         text-align: center 
      
         h4 
@@ -487,7 +486,7 @@ footer
 
         p 
             font-size: 14px 
-            margin: 0 auto 
+            margin: $centrado 
             text-align: center 
             padding-bottom: 30px 
             padding-left: 0px 
@@ -511,15 +510,14 @@ footer
      
         h3 
             font-size: 20px 
-            margin: 0 auto   
+            margin: $centrado   
      
         p 
             font-size: 14px 
      
 
     .seccionplanes 
-        display: flex 
-        flex-direction: row 
+        @include flexbox
         flex-flow: row wrap 
         justify-content: space-around 
         flex-grow: 1 
@@ -600,8 +598,7 @@ footer
      
 
     .articulos 
-        display: flex 
-        flex-direction: row 
+        @include flexbox
         margin-bottom: 80px 
         padding: 50px 10px 10px 10px 
         text-align: center 
@@ -613,7 +610,7 @@ footer
         display: flex 
         flex-direction: column 
         text-align: center 
-        margin: 0 auto 
+        margin: $centrado 
         width: 90%  
      
 
@@ -637,7 +634,7 @@ footer
 
     .textosizq 
         flex-grow: 1 
-        margin: 0 auto 
+        margin: $centrado 
         text-align: center 
      
 
@@ -649,7 +646,7 @@ footer
      
         p 
             font-size: 14px 
-            margin: 0 auto 
+            margin: $centrado 
             text-align: center 
             padding-bottom: 30px 
             padding-right: 0px 
@@ -659,7 +656,7 @@ footer
         img 
             width: 10% 
             height: 10% 
-            margin: 0 auto 
+            margin: $centrado 
      
 
     .articleimg 
@@ -676,7 +673,7 @@ footer
 
     .textosder 
         flex-grow: 1 
-        margin: 0 auto 
+        margin: $centrado 
         text-align: center 
      
 
@@ -688,7 +685,7 @@ footer
      
         p 
             font-size: 14px 
-            margin: 0 auto 
+            margin: $centrado 
             text-align: center 
             padding-bottom: 30px 
             padding-left: 0px 
@@ -698,7 +695,7 @@ footer
         img 
             width: 10% 
             height: 10% 
-            margin: 0 auto 
+            margin: $centrado 
      
 
     .titulosplanes 
@@ -712,7 +709,7 @@ footer
      
         h3 
             font-size: 24px 
-            margin: 0 auto   
+            margin: $centrado   
  
         p 
             font-size: 14px 
@@ -720,8 +717,7 @@ footer
 
     .seccionplanes 
         width: 95% 
-        display: flex 
-        flex-direction: row 
+        @include flexbox
         flex-flow: row wrap 
         justify-content: space-around 
         flex-grow: 1 
