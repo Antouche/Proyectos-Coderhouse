@@ -12,8 +12,7 @@ header{
     padding: 30px 10px 30px 10px;
     position: relative;
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;    
 }
 
 nav{
@@ -25,13 +24,13 @@ nav{
 
 nav img{
     text-align: center;
-
 }
 
 nav a{
     vertical-align: middle;
     flex-grow: 1
 }
+
 nav ul{
     display: flex;
     flex-direction: row;
@@ -45,12 +44,12 @@ nav li {
     text-align: center;
     font-weight: bold;
     flex-grow: 1;
- }
+}
 
  nav li a{
  	text-decoration: none;
  	color: #ffffff;
- }
+}
 
  .slider{
     width: 100%;
@@ -70,7 +69,7 @@ nav li {
 .textoslider h3{
     font-size: 40px;
     margin: 0 auto;
-    color:#ffffff;
+    color: #ffffff;
 }
 
 .textoslider p{
@@ -83,12 +82,13 @@ nav li {
     flex-flow: row wrap;
     justify-content: space-around;
     margin-bottom: 80px;
-    padding: 50px 100px 50px 100px;
+    padding: 50px 100px 20px 100px;
     text-align: center;
-    position: relative;
+    position: relative;  
 }
 
 .aptitud{
+    margin: 10px auto;
 	padding-top: 15px;
     flex-grow: 1;
 }
@@ -103,37 +103,88 @@ nav li {
 
 .aptitud img{
     height: 50px;
+    text-align: center;
 }
 
 .aptitud:hover{
-    transition: 1.3s ease-in-out;
+    transition: 1s ease-in-out;
     transform: scale(1.25);
 }
 
 .about{
     width: 100%;
+    background-color: #01a2a6;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
 }
+
 
 .titulos{
+    width: 30%;
     text-align: center;
     padding: 50px;
+    flex-grow: 1;
 }
 
+.imagenme {
+    margin-right: 40px;
+}
+.imagenme img{
+    flex-grow: 1;
+    text-align: center;
+    padding: 30px;
+}
+
+
 .titulos h2{
-    font-size: 60px;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.titulosneg{
+    text-align: center;
+    color: #333333;
+}
+
+.titulosneg h2{
+    font-size: 50px;
+    color: #01a2a6;
+}
+
+.trabajos{
+    background-color: #000000;
 }
 
 .galeria{
-    padding: 5px;
+    padding: 120px 5px 80px 5px;
     display: flex;
     flex-flow: row wrap;
-    margin: 5%;
+    margin: 0 5%;
+}
+
+.titulosgaleria{
+    text-align: center;
+    font-size: 12px;
+    float:center;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
 .galeria div{
     flex-grow: 1;
     width: 300px;
-    padding: 15px;
+    padding: 15px; 
+    -webkit-filter: brightness(0.25); filter: brightness(0.25);
+}
+
+.galeria div:hover{
+    -webkit-transition : -webkit-filter 800ms linear;
+    -webkit-filter:none;
+    filter: none;
 }
 
 .galeria div img{
@@ -141,23 +192,53 @@ nav li {
     height: auto;
 }
 
-.prefooter{
-    background-color: #555555;
-    padding: 50px;
+.contacto{
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.social{
+    width: 20%;
+    padding: 5px; 
+    display: flex;
+    flex-direction: row;
     text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+.social .network{
+    padding: 5px;
+    list-style: none;
+    flex-grow: 1;
+    -webkit-filter: grayscale(100%); filter: grayscale(100%);
 }
 
-.prefooter p{
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: lighter;
-    padding: 0 20px 0 20px;
-
+.social .network img{
+    width: 80%;
+    flex-grow: 1;
 }
 
-.prefooter p span{
-    color: #81D8D0;
-    font-weight: bold;
+.network:hover{
+    -webkit-transition : -webkit-filter 500ms linear;
+    -webkit-filter:none;
+    filter: none;
+}
+
+.linkscontacto{
+    text-align: center;
+    padding-bottom: 10px;
+    vertical-align: middle;
+}
+
+.linkscontacto a{
+    text-align: center;
+    text-decoration: none;
+    color: #01a2a6;
+   
+}
+.linkscontacto a img{
+    vertical-align: middle;
+    padding: 5px;
 }
 
 footer{
@@ -166,6 +247,7 @@ footer{
     display: flex;
     flex-direction: row;
 }
+
 .textofooter{
     flex-grow: 1;
     color: #ffffff;
@@ -190,5 +272,101 @@ footer nav li {
 }
 
  footer nav a{
-  color: #ffffff;
+    color: #ffffff;
  }
+
+/*Comienza mediaquery para iphone*/
+
+@media screen and (max-width: 400px) {
+    
+    
+    nav{
+        margin: 0 auto;
+    }
+    nav ul{
+        margin: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        flex-direction: row-reverse;
+    }
+    
+    ul li{
+        padding: 5px;
+    }
+    nav ul li{
+        display: inline-block;
+    
+    }
+
+    .slider{
+        width: 100%;
+        height: 200px;
+    }
+
+    .textoslider{
+        margin-top:50px;
+        margin-left: 20px;
+        width:50%;
+    }
+    .textoslider h3{
+        font-size: 18px; 
+    }
+    .textoslider p{
+        font-size: 12px;
+    }
+    
+    .titulos h2{
+        font-size: 40px
+    }
+
+    .imagenme{
+        display: none;
+    }
+    .social{
+        width: 50%;
+    }
+    
+    footer p {
+        width: 100%;
+        font-size: 12px;
+    }
+   .logo{
+        order:1;  
+        padding: 0;
+        text-align: left;
+        margin-left: -20px;
+    }
+
+}
+
+/*Comienza MediaQuery para tablets*/
+
+@media screen and (min-width: 401px) and (max-width: 620px) {
+    slider{
+        width: 100%;
+        height: 200px;
+    }
+
+    .textoslider{
+        margin-top:50px;
+        margin-left: 20px;
+        width:50%;
+    }
+    .textoslider h3{
+        font-size: 18px; 
+    }
+    .textoslider p{
+        font-size: 12px;
+    }
+    
+    .titulos h2{
+        font-size: 40px
+    }
+
+    .imagenme{
+        display: none;
+    }
+    .social{
+        width: 40%;
+    }
+}
