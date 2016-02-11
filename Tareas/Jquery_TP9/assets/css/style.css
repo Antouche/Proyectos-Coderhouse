@@ -1,0 +1,47 @@
+.glyphicon-film{
+    padding-right: 10px;
+}
+
+.firtsrow{
+    margin-top: 50px;
+}
+
+.col-xs-12  {
+    
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.marginarticulo{
+    margin-bottom: 30px;
+}
+.titulos{
+    height: 70px;
+}
+
+.parrafos{
+    height: 100px;
+    overflow: auto;
+    margin-bottom: 20px;
+    text-overflow: inherit;
+}
+
+.marginarticulo img{
+    margin-bottom: 20px;
+}
+
+.tituloscollapse{
+    text-align: center;
+    text-decoration: none;
+}
+
+footer p{
+    text-align: left;
+    margin-left: 30px;
+}
+
+/*@media (min-width: 1200px){
+    .container {
+        width: 900px;
+    }
+}*/
