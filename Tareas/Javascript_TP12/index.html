@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+	<title>Calculadora Javascript</title>
+    
+    <script type="text/javascript">
+        function calculadora(){
+            alert("entre a la funcion");
+            var resultado; 
+            var operador1=Number(document.getElementById('ope1'));
+            alert(operador1);
+            var operador2=Number(document.getElementById('ope2'));
+            alert(operador2);
+            var operacion=document.getElementById('operation');
+            alert(operacion);
+            
+            switch (operacion){
+                case "suma":
+                resultado = resultado+operador1+operador2;
+                break;
+                case "resta":
+                resultado = operador1-operador2;
+                break;
+                case "divide":
+                resultado = operador1/operador2;
+                break;
+                case "multiplica":
+                resultado = operador1*operador2;
+                break;
+            }
+                alert(resultado);
+                return resultado;
+        }       
+                /*var operador1= Number(prompt("Ingresa el primer número: "));
+                var operador2= Number(prompt("Ingresa el segundo número: "));
+                var operacion= prompt("¿Qué operación quieres hacer? Puedes decirle: 'suma', 'resta', 'multiplica' o 'divide' ");
+                var resultado = calculadora (operador1, operador2, operacion);*/                  
+    </script>
+</head>
+<body>
+    <h1>Esta es la calculadora de Javascript</h1>
+    <form>
+        Operador 1: <input id="ope1" type="text" name="ope1"><br>
+        Operador 2: <input id="ope2" type="text" name="ope2"><br>
+        Operación:  <input id="operation" type="text" name="operation"><br>
+        <button onclick="calculadora()">Calcular</button>
+    </form>
+    
+    
+</body>
+</html>
