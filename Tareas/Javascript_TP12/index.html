@@ -4,21 +4,21 @@
     
     <meta charset="utf-8">
 	<title>Calculadora Javascript</title>
-    
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <script type="text/javascript">
         function calculadora(){
             alert("entre a la funcion");
             var resultado; 
-            var operador1=Number(document.getElementById('ope1'));
+            var operador1=Number(document.getElementById('ope1').value);
             alert(operador1);
-            var operador2=Number(document.getElementById('ope2'));
+            var operador2=Number(document.getElementById('ope2').value);
             alert(operador2);
-            var operacion=document.getElementById('operation');
+            var operacion=document.getElementById('operation').value;
             alert(operacion);
             
             switch (operacion){
                 case "suma":
-                resultado = resultado+operador1+operador2;
+                resultado = operador1+operador2;
                 break;
                 case "resta":
                 resultado = operador1-operador2;
@@ -30,8 +30,8 @@
                 resultado = operador1*operador2;
                 break;
             }
-                alert(resultado);
-                return resultado;
+                document.getElementById('result').innerHTML = resultado;
+                return false;
         }       
                 /*var operador1= Number(prompt("Ingresa el primer número: "));
                 var operador2= Number(prompt("Ingresa el segundo número: "));
@@ -41,13 +41,18 @@
 </head>
 <body>
     <h1>Esta es la calculadora de Javascript</h1>
-    <form>
-        Operador 1: <input id="ope1" type="text" name="ope1"><br>
-        Operador 2: <input id="ope2" type="text" name="ope2"><br>
-        Operación:  <input id="operation" type="text" name="operation"><br>
-        <button onclick="calculadora()">Calcular</button>
+     <form >
+         Operador 1: <input id="ope1" type="text" name="ope1"><br>
+         Operador 2: <input id="ope2" type="text" name="ope2"><br>
+         Operación:  <input id="operation" type="text" name="operation"><br>
+         <button type="button" onclick="calculadora()">Calcular</button>
     </form>
+    <br>
+    <h5>Escribe en operación una de las opciones: "suma", "resta", divide o "multiplica"</h5><br/><br/>
     
+    <div class="total">
+        Total <span id="result">0</span>
+    </div>
     
 </body>
 </html>
