@@ -1,0 +1,40 @@
+body{
+    font-family: sans-serif;
+}
+
+h1{
+    text-align:center;
+    color:#bb2352;
+}
+p{
+    text-align: center;
+}
+form{
+    width:300px;
+    height:100px;
+    margin:0 auto;
+    border:1px solid #ccc;
+    padding: 20px;
+}
+input{
+    margin:2% 0.5%;
+    padding:2%;
+}
+button{
+    display:block;
+    margin:0 auto;
+    background:#bb2352;
+    border:0;
+    padding:2%;
+    color: #ffffff;
+}
+h5{
+    text-align: center;
+    margin: 0 auto;
+}
+.total{
+    text-align: center;
+}
+span{
+    color: red;
+}
