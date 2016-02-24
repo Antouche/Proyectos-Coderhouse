@@ -7,22 +7,37 @@
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <script type="text/javascript">
         
-        function primos(){
-            alert("Entre a la funcion");
-            var resultado;
-            var numero=Number(document.getElementById('num').value);   
-            
+        /*Funcion que valida si un numero es primo o no*/
+        function primos(num){
+            var numero= num; 
                for(var i=2 ; i<numero; i++){
                    if(numero%i==0){
-                        alert("El numero no es primo");
-                        resultado="NO";
-                        document.getElementById('result').innerHTML = resultado;
                         return false;
                    }
                } 
-                resultado="SI";
-            document.getElementById('result').innerHTML = resultado;
             return true;  
+        }
+        /*Funcion que recibe el numero y depende del resultado de la funcion primos() imprime si es primo o no*/
+        function calculaprimo(){
+            var numero= Number(document.getElementById('num').value);
+            if(primos(numero)){
+                document.getElementById('result').innerHTML = "ES PRIMO";
+                document.getElementById('losprimos').innerHTML = " ";
+            }else{
+                document.getElementById('result').innerHTML = "NO ES PRIMO";
+                document.getElementById('losprimos').innerHTML = " ";
+            }
+        }
+        /*Funcion para imprimir en pantalla todos los primos hasta el número ingresado*/
+        function imprimirprimos(){
+            var todoslosprimos=1;
+            var numero= Number(document.getElementById('num').value);
+            for(var i=2 ; i<=numero ; i++){
+                if(primos(i)){
+                    todoslosprimos=todoslosprimos+", "+i;
+                }
+            }
+            document.getElementById('losprimos').innerHTML = todoslosprimos;
         }
         
     </script>
@@ -31,14 +46,19 @@
     <h1>¡Descubre si un numero es primo!</h1>
     <p>Para que un número sea primo solo puede ser divisible por 1 y por si mismo</p>
      <form >
-         Número: <input id="num" type="text" name="num"><br>
-         <button type="button" onclick="primos()">¿Es Primo?</button>
+         <b>Número:</b><input id="num" type="text" name="num"><br>
+         <button  type="button" onclick="calculaprimo()">¿Es Primo?</button><br>
+         <button  type="button" onclick="imprimirprimos()">Mostrar primos hasta el numero ingresado</button>
     </form>
     <br>
     <h5>Ingresa un número e descubre si es primo o no.</h5><br/><br/>
     
+    <div class="numero">
+        El número <span id="result"></span>
+    </div>
+    
     <div class="total">
-        El número <span id="result"></span> es primo.
+        Todos los primos en el rango son: <br> <span id="losprimos"></span> 
     </div>
     
 </body>

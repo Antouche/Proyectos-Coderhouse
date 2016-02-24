@@ -16,6 +16,9 @@ form{
     border:1px solid #ccc;
     padding: 20px;
 }
+form b{
+    padding-left: 50px;
+}
 input{
     margin:2% 0.5%;
     padding:2%;
@@ -32,8 +35,14 @@ h5{
     text-align: center;
     margin: 0 auto;
 }
+.numero{
+    text-align: center;
+}
 .total{
     text-align: center;
+    margin: 0 auto;
+    line-height: 30px;
+    width: 70%;
 }
 span{
     color: red;
