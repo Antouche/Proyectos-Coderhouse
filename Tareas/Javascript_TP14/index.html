@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+	<title>Arreglos en Javascript</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        
+        function fillArray (n){
+            var arreglo= new Array(n);
+            for(var i=0; i<n; i++){
+                arreglo[i]=" "+Math.round(Math.random()*100);
+            }
+            return arreglo;
+        }
+
+        function ascendente(arreglo){
+                for(var i=0; i<arreglo.length-1; i++){
+                    for(var j=i+1; j<arreglo.length; j++){
+                        if(arreglo[i]>arreglo[j]){
+                            var temporal=arreglo[i];
+                            arreglo[i]=arreglo[j]
+                            arreglo[j]=temporal;
+                        }
+                    }                
+                }
+                return arreglo;   
+        }
+        
+        function descendente(arreglo){
+            for(var i=0; i<arreglo.length-1; i++){
+                    for(var j=i+1; j<arreglo.length; j++){
+                        if(arreglo[i]<arreglo[j]){
+                            var temporal=arreglo[i];
+                            arreglo[i]=arreglo[j]
+                            arreglo[j]=temporal;
+                        }
+                    }                
+                }
+                return arreglo;   
+        }
+        
+        function llenarArreglo(){
+            document.getElementById('printarregloazar').innerHTML =" ";
+            document.getElementById('printarreglo').innerHTML =" ";
+        var numero= Number(document.getElementById('num').value);
+            var arreglotemporal=fillArray(numero);
+            document.getElementById('printarregloazar').innerHTML ="Este es tu arreglo al azar : "+arreglotemporal;
+        }
+        
+        function arregloDescendente(){
+        var numero= Number(document.getElementById('num').value);
+            var arreglotemporal=fillArray(numero);
+            document.getElementById('printarregloazar').innerHTML ="Este es tu arreglo al azar : "+arreglotemporal;
+            document.getElementById('printarreglo').innerHTML ="Este es tu arreglo ordenado de forma ASCENDENTE : "+descendente(arreglotemporal);
+        }
+        
+        function arregloAscendente(){
+        var numero= Number(document.getElementById('num').value);
+            var arreglotemporal=fillArray(numero);
+            document.getElementById('printarregloazar').innerHTML ="Este es tu arreglo al azar : "+arreglotemporal;
+            document.getElementById('printarreglo').innerHTML ="Este es tu arreglo ordenado de forma DESCENDENTE : "+ascendente(arreglotemporal);
+        }
+    </script>
+</head>
+<body>
+    <h1>Llenando arreglos</h1>
+    <p>En un arreglo puedes ingresar la cantidad de elementos que tu quieras</p>
+     <form >
+         <b>Cantidad </b><input id="num" type="text" name="num"><br>
+         <br>
+         <button  type="button" onclick="llenarArreglo()">Llenar arreglo</button><br>
+         <button  type="button" onclick="arregloAscendente()">Arreglo en forma ascendente</button>
+         <br>
+         <button  type="button" onclick="arregloDescendente()">Arreglo en forma descendente</button>
+    </form>
+    <br>
+    <h5>Ingresa la cantidad de elementos que tenga tu arreglo</h5><br/><br/>
+    
+    <div class="total">
+        <br> <span id="printarregloazar"></span> <br>
+        <br> <span id="printarreglo"></span> 
+        <br> <span id="printarreglo"></span> 
+    </div>
+    
+</body>
+</html>
