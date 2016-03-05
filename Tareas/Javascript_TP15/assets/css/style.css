@@ -1,0 +1,95 @@
+body{
+    font-family: sans-serif;
+    background-color: #0169b2;
+}
+.container{
+    padding: 30px;
+}
+
+h1{
+    text-align:center;
+    color:#ffffff;
+}
+p{
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+}
+form{
+    width:300px;
+    height:100px;
+    margin:0 auto;
+    border:1px solid #ccc;
+    padding: 20px;
+}
+form b{
+    padding-left: 50px;
+    color: #ffffff;
+}
+input{
+    margin:2% 0.5%;
+    padding:2%;
+}
+.botones{
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+button{
+    margin:0 auto;
+    background:#bb2352;
+    border:0;
+    padding:2%;
+    color: #ffffff;
+}
+.cuadroPuntajes{
+    width:300px;
+    height:100px;
+    margin:0 auto;
+    border:1px solid #ccc;
+    padding: 20px;
+    color: #ffffff;  
+}
+
+.reseteo{
+    margin: 0 auto;
+}
+
+.tipoPuntaje{  
+    display: inline-block;
+    text-align: left; 
+}
+
+.tipoPuntaje p{
+    text-align: left;
+}
+
+.losPuntajes{
+    text-align: right;
+    display: inline-block;
+    float: right;
+}
+
+.losPuntajes p{
+    text-align: right;
+}
+
+h5{
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+
+.numero{
+    text-align: center;
+}
+.total{
+    text-align: center;
+    margin: 0 auto;
+    line-height: 30px;
+    width: 70%;
+}
+span{
+    color: #ffffff;
+}
